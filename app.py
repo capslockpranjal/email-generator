@@ -53,7 +53,7 @@ def main():
                 }
                 
                 try:
-                    response = requests.post("http://localhost:8000/generate-email", json=email_data)
+                    response = requests.post("http://localhost:8001/generate-email", json=email_data)
                     if response.status_code == 200:
                         result = response.json()
                         st.session_state.generated_email = result["email"]

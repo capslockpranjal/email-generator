@@ -12,11 +12,11 @@ load_dotenv()
 
 if __name__ == "__main__":
     # Get configuration from environment variables
-    port = int(os.getenv("STREAMLIT_PORT", 8501))
+    port = int(os.getenv("STREAMLIT_PORT", 8502))
     
     print(f"🎨 Starting Personalized Email Generator Frontend...")
     print(f"🌐 UI will be available at: http://localhost:{port}")
-    print(f"⚠️  Make sure the backend API is running on port 8000")
+    print(f"⚠️  Make sure the backend API is running on port 8001")
     print("\n" + "="*50)
     
     # Start Streamlit

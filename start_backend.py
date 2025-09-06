@@ -11,8 +11,8 @@ load_dotenv()
 
 if __name__ == "__main__":
     # Get configuration from environment variables
-    host = os.getenv("API_HOST", "0.0.0.0")
-    port = int(os.getenv("API_PORT", 8000))
+    host = os.getenv("API_HOST", "127.0.0.1")
+    port = int(os.getenv("API_PORT", 8001))
     
     print(f"🚀 Starting Personalized Email Generator API...")
     print(f"📍 Server will be available at: http://{host}:{port}")
